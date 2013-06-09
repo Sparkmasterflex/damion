@@ -1,0 +1,13 @@
+@import "mixins";
+
+.pattern-bg { background: url(/images/header-bg.jpg) repeat left top; }
+
+.white { 
+  background: #fff; 
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.about { background-color: $about; }
+.games { background-color: $games; }
+.cartoons { background-color: $cartoons; }

@@ -1,0 +1,36 @@
+@import "mixins";
+
+.square-300 { @include square(300px); }
+.square-200 { @include square(200px); }
+.square-100 { @include square(100px); }
+
+.long-300 { width: 300px; height: 100px; }
+.long-200 { width: 200px; height: 100px; }
+
+.tall-300 { height: 300px; width: 100px; }
+.tall-200 { height: 200px; width: 100px; }
+
+.left { float: left; }
+.right { float: right; }
+.centered { margin-left: auto; margin-right: auto; }
+
+/*--------------------------- GRID -------------------------*/
+.full { width: 100%; }
+.three-quarters { width: 75%; }
+.two-thirds { width: 66%; }
+.half { width: 50%; }
+.one-third { width: 33%; position: relative; }
+.one-quarter { width: 25%; }
+
+.percent-10 { width: 10%; }
+.percent-20 { width: 20%; }
+.percent-40 { width: 40%; }
+.percent-60 { width: 60%; }
+.percent-80 { width: 80%; }
+.percent-90 { width: 90%; }
+
+
+.margin-bottom-20 { margin-bottom: 20px; }
+.margin-bottom-40 { margin-bottom: 40px; }
+
+.pad-10 { padding: 10px; }

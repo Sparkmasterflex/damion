@@ -1,0 +1,16 @@
+.pattern-bg {
+  background: url(/images/header-bg.jpg) repeat left top; }
+
+.white {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(204, 204, 204, 0.5); }
+
+.about {
+  background-color: #9a0000; }
+
+.games {
+  background-color: #daa71e; }
+
+.cartoons {
+  background-color: #1ec6da; }

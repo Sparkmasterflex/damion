@@ -1,0 +1,67 @@
+@import "mixins";
+
+.logo {
+  width: 4.85em;
+  height: 1.23em;
+  display: inline-block;
+  background: url(/images/logo.png) no-repeat center center;
+  @include hidden;
+}
+
+nav {
+  float: right;
+  padding: 2em 0;
+  li {
+    float: left;
+    &:last-child a { margin-right: 0; }
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 0.5em 0em 0.2em;
+      margin: 0 0.5em;
+      &.home { 
+        border: { left: 1px solid $home; bottom: 1px solid $home; } 
+        background-color: transparent;
+        &:hover { background-color: $home; }
+      }
+      &.about { 
+        border: { left: 1px solid $about; bottom: 1px solid $about; } 
+        background-color: transparent;
+        &:hover { background-color: $about; }
+      }
+      &.cartoons { 
+        border: { left: 1px solid $cartoons; bottom: 1px solid $cartoons; } 
+        background-color: transparent;
+        &:hover { background-color: $cartoons; }
+      }
+      &.games { 
+        border: { left: 1px solid $games; bottom: 1px solid $games; } 
+        background-color: transparent;
+        &:hover { background-color: $games; }
+      }
+    }
+  }
+}
+
+.stamp, .item { 
+  padding: 1em;
+  @include box-shadow(0,0,4px,rgba(0,0,0,0.75));
+  @include border-radius(3px);
+}
+
+.stamp {
+  position: absolute;
+  left: 40em;
+  top: 20em;
+}
+
+.item .white { overflow: hidden; height: 90%; }
+
+.img-only {
+  @include square(200px);
+  .mask { 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+  }
+}

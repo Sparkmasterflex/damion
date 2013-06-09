@@ -1,0 +1,71 @@
+.logo {
+  width: 4.85em;
+  height: 1.23em;
+  display: inline-block;
+  background: url(/images/logo.png) no-repeat center center;
+  text-indent: -9999px;
+  overflow: hidden; }
+
+nav {
+  float: right;
+  padding: 2em 0; }
+  nav li {
+    float: left; }
+    nav li:last-child a {
+      margin-right: 0; }
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 0.5em 0em 0.2em;
+      margin: 0 0.5em; }
+      nav li a.home {
+        border-left: 1px solid #003cff;
+        border-bottom: 1px solid #003cff;
+        background-color: transparent; }
+        nav li a.home:hover {
+          background-color: #003cff; }
+      nav li a.about {
+        border-left: 1px solid #9a0000;
+        border-bottom: 1px solid #9a0000;
+        background-color: transparent; }
+        nav li a.about:hover {
+          background-color: #9a0000; }
+      nav li a.cartoons {
+        border-left: 1px solid #1ec6da;
+        border-bottom: 1px solid #1ec6da;
+        background-color: transparent; }
+        nav li a.cartoons:hover {
+          background-color: #1ec6da; }
+      nav li a.games {
+        border-left: 1px solid #daa71e;
+        border-bottom: 1px solid #daa71e;
+        background-color: transparent; }
+        nav li a.games:hover {
+          background-color: #daa71e; }
+
+.stamp, .item {
+  padding: 1em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px; }
+
+.stamp {
+  position: absolute;
+  left: 40em;
+  top: 20em; }
+
+.item .white {
+  overflow: hidden;
+  height: 90%; }
+
+.img-only {
+  display: inline-block;
+  width: 200px;
+  height: 200px; }
+  .img-only .mask {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
